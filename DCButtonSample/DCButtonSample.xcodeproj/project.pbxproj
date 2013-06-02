@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C24153C11759AC1D009ADF7A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C24153C01759AC1D009ADF7A /* UIKit.framework */; };
+		C24153C31759AC1D009ADF7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C24153C21759AC1D009ADF7A /* Foundation.framework */; };
+		C24153C51759AC1D009ADF7A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C24153C41759AC1D009ADF7A /* CoreGraphics.framework */; };
+		C24153CB1759AC1D009ADF7A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C24153C91759AC1D009ADF7A /* InfoPlist.strings */; };
+		C24153CD1759AC1D009ADF7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C24153CC1759AC1D009ADF7A /* main.m */; };
+		C24153D11759AC1D009ADF7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C24153D01759AC1D009ADF7A /* AppDelegate.m */; };
+		C24153D31759AC1D009ADF7A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C24153D21759AC1D009ADF7A /* Default.png */; };
+		C24153D51759AC1D009ADF7A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C24153D41759AC1D009ADF7A /* Default@2x.png */; };
+		C24153D71759AC1D009ADF7A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C24153D61759AC1D009ADF7A /* Default-568h@2x.png */; };
+		C24153DA1759AC1D009ADF7A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24153D81759AC1D009ADF7A /* MainStoryboard_iPhone.storyboard */; };
+		C24153DD1759AC1D009ADF7A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24153DB1759AC1D009ADF7A /* MainStoryboard_iPad.storyboard */; };
+		C24153E01759AC1D009ADF7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C24153DF1759AC1D009ADF7A /* ViewController.m */; };
+		C24153EC1759B83B009ADF7A /* DCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C24153EB1759B83B009ADF7A /* DCButton.m */; };
+		C24153EF1759BA70009ADF7A /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = C24153EE1759BA70009ADF7A /* button.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C24153BD1759AC1D009ADF7A /* DCButtonSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCButtonSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C24153C01759AC1D009ADF7A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C24153C21759AC1D009ADF7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C24153C41759AC1D009ADF7A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C24153C81759AC1D009ADF7A /* DCButtonSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCButtonSample-Info.plist"; sourceTree = "<group>"; };
+		C24153CA1759AC1D009ADF7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C24153CC1759AC1D009ADF7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C24153CE1759AC1D009ADF7A /* DCButtonSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCButtonSample-Prefix.pch"; sourceTree = "<group>"; };
+		C24153CF1759AC1D009ADF7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C24153D01759AC1D009ADF7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C24153D21759AC1D009ADF7A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C24153D41759AC1D009ADF7A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C24153D61759AC1D009ADF7A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C24153D91759AC1D009ADF7A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		C24153DC1759AC1D009ADF7A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		C24153DE1759AC1D009ADF7A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C24153DF1759AC1D009ADF7A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C24153EA1759B83B009ADF7A /* DCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCButton.h; sourceTree = "<group>"; };
+		C24153EB1759B83B009ADF7A /* DCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCButton.m; sourceTree = "<group>"; };
+		C24153EE1759BA70009ADF7A /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C24153BA1759AC1D009ADF7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24153C11759AC1D009ADF7A /* UIKit.framework in Frameworks */,
+				C24153C31759AC1D009ADF7A /* Foundation.framework in Frameworks */,
+				C24153C51759AC1D009ADF7A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C24153B41759AC1D009ADF7A = {
+			isa = PBXGroup;
+			children = (
+				C24153C61759AC1D009ADF7A /* DCButtonSample */,
+				C24153BF1759AC1D009ADF7A /* Frameworks */,
+				C24153BE1759AC1D009ADF7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C24153BE1759AC1D009ADF7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C24153BD1759AC1D009ADF7A /* DCButtonSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C24153BF1759AC1D009ADF7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C24153C01759AC1D009ADF7A /* UIKit.framework */,
+				C24153C21759AC1D009ADF7A /* Foundation.framework */,
+				C24153C41759AC1D009ADF7A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C24153C61759AC1D009ADF7A /* DCButtonSample */ = {
+			isa = PBXGroup;
+			children = (
+				C24153E91759B83B009ADF7A /* Classes */,
+				C24153ED1759BA70009ADF7A /* Resources */,
+				C24153CF1759AC1D009ADF7A /* AppDelegate.h */,
+				C24153D01759AC1D009ADF7A /* AppDelegate.m */,
+				C24153D81759AC1D009ADF7A /* MainStoryboard_iPhone.storyboard */,
+				C24153DB1759AC1D009ADF7A /* MainStoryboard_iPad.storyboard */,
+				C24153DE1759AC1D009ADF7A /* ViewController.h */,
+				C24153DF1759AC1D009ADF7A /* ViewController.m */,
+				C24153C71759AC1D009ADF7A /* Supporting Files */,
+			);
+			path = DCButtonSample;
+			sourceTree = "<group>";
+		};
+		C24153C71759AC1D009ADF7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C24153C81759AC1D009ADF7A /* DCButtonSample-Info.plist */,
+				C24153C91759AC1D009ADF7A /* InfoPlist.strings */,
+				C24153CC1759AC1D009ADF7A /* main.m */,
+				C24153CE1759AC1D009ADF7A /* DCButtonSample-Prefix.pch */,
+				C24153D21759AC1D009ADF7A /* Default.png */,
+				C24153D41759AC1D009ADF7A /* Default@2x.png */,
+				C24153D61759AC1D009ADF7A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C24153E91759B83B009ADF7A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C24153EA1759B83B009ADF7A /* DCButton.h */,
+				C24153EB1759B83B009ADF7A /* DCButton.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C24153ED1759BA70009ADF7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C24153EE1759BA70009ADF7A /* button.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C24153BC1759AC1D009ADF7A /* DCButtonSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C24153E31759AC1D009ADF7A /* Build configuration list for PBXNativeTarget "DCButtonSample" */;
+			buildPhases = (
+				C24153B91759AC1D009ADF7A /* Sources */,
+				C24153BA1759AC1D009ADF7A /* Frameworks */,
+				C24153BB1759AC1D009ADF7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCButtonSample;
+			productName = DCButtonSample;
+			productReference = C24153BD1759AC1D009ADF7A /* DCButtonSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C24153B51759AC1D009ADF7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Dolice;
+			};
+			buildConfigurationList = C24153B81759AC1D009ADF7A /* Build configuration list for PBXProject "DCButtonSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C24153B41759AC1D009ADF7A;
+			productRefGroup = C24153BE1759AC1D009ADF7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C24153BC1759AC1D009ADF7A /* DCButtonSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C24153BB1759AC1D009ADF7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24153CB1759AC1D009ADF7A /* InfoPlist.strings in Resources */,
+				C24153D31759AC1D009ADF7A /* Default.png in Resources */,
+				C24153D51759AC1D009ADF7A /* Default@2x.png in Resources */,
+				C24153D71759AC1D009ADF7A /* Default-568h@2x.png in Resources */,
+				C24153DA1759AC1D009ADF7A /* MainStoryboard_iPhone.storyboard in Resources */,
+				C24153DD1759AC1D009ADF7A /* MainStoryboard_iPad.storyboard in Resources */,
+				C24153EF1759BA70009ADF7A /* button.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C24153B91759AC1D009ADF7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24153CD1759AC1D009ADF7A /* main.m in Sources */,
+				C24153D11759AC1D009ADF7A /* AppDelegate.m in Sources */,
+				C24153E01759AC1D009ADF7A /* ViewController.m in Sources */,
+				C24153EC1759B83B009ADF7A /* DCButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C24153C91759AC1D009ADF7A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C24153CA1759AC1D009ADF7A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C24153D81759AC1D009ADF7A /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C24153D91759AC1D009ADF7A /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C24153DB1759AC1D009ADF7A /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C24153DC1759AC1D009ADF7A /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C24153E11759AC1D009ADF7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C24153E21759AC1D009ADF7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C24153E41759AC1D009ADF7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCButtonSample/DCButtonSample-Prefix.pch";
+				INFOPLIST_FILE = "DCButtonSample/DCButtonSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C24153E51759AC1D009ADF7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCButtonSample/DCButtonSample-Prefix.pch";
+				INFOPLIST_FILE = "DCButtonSample/DCButtonSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C24153B81759AC1D009ADF7A /* Build configuration list for PBXProject "DCButtonSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C24153E11759AC1D009ADF7A /* Debug */,
+				C24153E21759AC1D009ADF7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C24153E31759AC1D009ADF7A /* Build configuration list for PBXNativeTarget "DCButtonSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C24153E41759AC1D009ADF7A /* Debug */,
+				C24153E51759AC1D009ADF7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C24153B51759AC1D009ADF7A /* Project object */;
+}
