@@ -1,101 +1,73 @@
 //
 //  DCButton.m
-//  DCButtonSample
 //
-//  Created by Dolice on 2013/06/01.
-//  Copyright (c) 2013年 Dolice. All rights reserved.
+//  Created by Masaki Hirokawa on 2013/06/04.
+//  Copyright (c) 2013年 Masaki Hirokawa. All rights reserved.
 //
 
 #import "DCButton.h"
 
 @implementation DCButton
 
-- (id)initWithFrame:(CGRect)frame
+//テキストボタン
++ (UIButton *)planeButton:(CGRect)frame text:(NSString *)text delegate:(id)delegate action:(SEL)action tag:(NSInteger)tag
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
-
-/*
- // Only override drawRect: if you perform custom drawing.
- // An empty implementation adversely affects performance during animation.
- - (void)drawRect:(CGRect)rect
- {
- // Drawing code
- }
- */
-
-//ボタンをセット
-- (void)setButton
-{
-    //ボタンを作成
+    //ボタン作成
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button setTitle:text forState:UIControlStateNormal];
     
-    //ボタンのテキストを設定
-    [button setTitle:@"Button" forState:UIControlStateNormal];
-    
-    //ボタンのテキストに合わせてサイズを自動調整
+    //ボタンのフレームを指定
     [button sizeToFit];
-    
-    //画面の中央に配置
-    button.center = self.view.center;
+    button.frame = frame;
     
     //画面が変わってもボタンの位置を自動調整
     button.autoresizingMask =
-    UIViewAutoresizingFlexibleWidth |
-    UIViewAutoresizingFlexibleHeight |
-    UIViewAutoresizingFlexibleLeftMargin |
-    UIViewAutoresizingFlexibleRightMargin |
-    UIViewAutoresizingFlexibleTopMargin |
-    UIViewAutoresizingFlexibleBottomMargin;
+        UIViewAutoresizingFlexibleWidth |
+        UIViewAutoresizingFlexibleHeight |
+        UIViewAutoresizingFlexibleLeftMargin |
+        UIViewAutoresizingFlexibleRightMargin |
+        UIViewAutoresizingFlexibleTopMargin |
+        UIViewAutoresizingFlexibleBottomMargin;
     
     //ボタンのタグを指定
-    button.tag = BUTTON_FIRST;
+    button.tag = tag;
     
     //ボタンをタップした時に指定のメソッドを呼ぶ
-    [button addTarget:self
-               action:@selector(buttonDidTap:)
+    [button addTarget:delegate
+               action:action
      forControlEvents:UIControlEventTouchUpInside];
     
-    //ボタンを画面に追加
-    [self.view addSubview:button];
+    return (button);
 }
 
-//ボタンのタップイベント
-- (void)buttonDidTap:(UIButton *)button
+//画像ボタン
++ (UIButton *)imageButton:(CGRect)frame img:(UIImage *)img isHighlighte:(BOOL)isHighlighte on_img:(UIImage *)on_img delegate:(id)delegate action:(SEL)action tag:(NSInteger)tag
 {
-    //タグを格納
-    NSInteger eventType = button.tag;
-    
-    //タグからイベントタイプを取得し振り分け処理
-    if (eventType == BUTTON_FIRST) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
-                                                        message:[NSString stringWithFormat:@"eventType: %d", eventType]
-                                                       delegate:nil
-                                              cancelButtonTitle:nil
-                                              otherButtonTitles:@"OK", nil];
-        [alert show];
-    }
-}
-
-+(UIButton*) makeImageButton:(CGRect)frame img:(UIImage*)img isHighlighte:(BOOL)isHighlighte on_img:(UIImage*)on_img delegate:(id)delegate action:(SEL)action tag:(NSInteger)tag {
+    //ボタン作成
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    //ボタンのフレームを指定
 	[button setFrame:frame];
+    
+    //ボタンの画像を指定
 	[button setImage:img forState:UIControlStateNormal];
 	button.adjustsImageWhenDisabled = NO;
-    if(!isHighlighte) {
+    if (!isHighlighte) {
         button.showsTouchWhenHighlighted = NO;
         button.adjustsImageWhenHighlighted = NO;
-    }
-    else if(on_img != nil || ![on_img isEqual:[NSNull null]]) {
+    } else if(on_img != nil || ![on_img isEqual:[NSNull null]]) {
         [button setImage:on_img forState:UIControlStateNormal];
     }
+    
+    //ボタンのタグを指定
 	[button setTag:tag];
-	[button addTarget:delegate action:action forControlEvents:UIControlEventTouchUpInside];
-	return button;
+    
+    //ボタンをタップした時に指定のメソッドを呼ぶ
+	[button addTarget:delegate
+               action:action
+     forControlEvents:UIControlEventTouchUpInside];
+    
+	return (button);
 }
 
 @end

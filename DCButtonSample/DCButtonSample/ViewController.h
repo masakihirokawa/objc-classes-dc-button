@@ -2,11 +2,12 @@
 //  ViewController.h
 //  DCButtonSample
 //
-//  Created by Dolice on 2013/06/01.
-//  Copyright (c) 2013年 Dolice. All rights reserved.
+//  Created by Masaki Hirokawa on 2013/06/04.
+//  Copyright (c) 2013年 Masaki Hirokawa. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "DCButton.h"
 
 @interface ViewController : UIViewController
 

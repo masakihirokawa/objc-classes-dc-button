@@ -91,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				C24153E91759B83B009ADF7A /* Classes */,
-				C24153ED1759BA70009ADF7A /* Resources */,
 				C24153CF1759AC1D009ADF7A /* AppDelegate.h */,
 				C24153D01759AC1D009ADF7A /* AppDelegate.m */,
 				C24153D81759AC1D009ADF7A /* MainStoryboard_iPhone.storyboard */,
@@ -106,6 +105,7 @@
 		C24153C71759AC1D009ADF7A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C24153ED1759BA70009ADF7A /* Resources */,
 				C24153C81759AC1D009ADF7A /* DCButtonSample-Info.plist */,
 				C24153C91759AC1D009ADF7A /* InfoPlist.strings */,
 				C24153CC1759AC1D009ADF7A /* main.m */,
@@ -338,6 +338,7 @@
 				C24153E51759AC1D009ADF7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
