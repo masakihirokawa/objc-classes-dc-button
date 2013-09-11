@@ -2,14 +2,14 @@
 //  DCButton.m
 //
 //  Created by Masaki Hirokawa on 2013/06/04.
-//  Copyright (c) 2013年 Masaki Hirokawa. All rights reserved.
+//  Copyright (c) 2013 Masaki Hirokawa. All rights reserved.
 //
 
 #import "DCButton.h"
 
 @implementation DCButton
 
-//テキストボタン
+//通常のボタン
 + (UIButton *)planeButton:(CGRect)frame text:(NSString *)text delegate:(id)delegate action:(SEL)action tag:(NSInteger)tag
 {
     //ボタン作成
@@ -56,7 +56,7 @@
         button.showsTouchWhenHighlighted = NO;
         button.adjustsImageWhenHighlighted = NO;
     } else if(on_img != nil || ![on_img isEqual:[NSNull null]]) {
-        [button setImage:on_img forState:UIControlStateNormal];
+        [button setImage:on_img forState:UIControlStateHighlighted];
     }
     
     //ボタンのタグを指定

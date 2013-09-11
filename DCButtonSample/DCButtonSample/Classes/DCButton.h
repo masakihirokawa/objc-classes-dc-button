@@ -2,7 +2,7 @@
 //  DCButton.h
 //
 //  Created by Masaki Hirokawa on 2013/06/04.
-//  Copyright (c) 2013年 Masaki Hirokawa. All rights reserved.
+//  Copyright (c) 2013 Masaki Hirokawa. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
